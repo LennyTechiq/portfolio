@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonard Runya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+        <a href="#" class="nav-brand">Leonard Runya</a>
+        <button class="nav-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i> <!-- Hamburger icon -->
+        </button>
+        <ul class="nav-links" role="navigation" aria-label="Main Navigation">
+          <li><a href="#home" aria-label="Home"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about" aria-label="About Me"><i class="fa fa-user"></i> About</a></li>
+          <li><a href="#projects" aria-label="Projects"><i class="fa fa-project-diagram"></i> Projects</a></li>
+          <li><a href="#contact" aria-label="Contact"><i class="fa fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>                
+  </header>
+
+  <section id="home" class="home-section">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Leonard Runya</h1>
+      <p>Web Developer | IT Specialist | Designer</p>
+      <a href="#about" class="cta-btn">Let's Connect</a>
+    </div>
+  </section>  
+  
+  <section class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+          <div class="skill-item">
+              <div class="skill-icon"><i class="fa fa-code"></i></div>
+              <div class="skill-name">Web Development</div>
+              <div class="skill-description">Building responsive and user-friendly websites.</div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-icon"><i class="fa fa-paint-brush"></i></div>
+              <div class="skill-name">Graphic Design</div>
+              <div class="skill-description">Creating visually appealing designs and branding.</div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-icon"><i class="fa fa-pencil-alt"></i></div>
+              <div class="skill-name">Technical Writing</div>
+              <div class="skill-description">Crafting clear and concise documentation.</div>
+          </div>
+          <div class="skill-item">
+              <div class="skill-icon"><i class="fa fa-database"></i></div>
+              <div class="skill-name">Database Management</div>
+              <div class="skill-description">Organizing and optimizing data storage solutions.</div>
+          </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-cards">
+      <div class="card personal-values">
+        <h3>Personal Values</h3>
+        <ul>
+          <li>Integrity</li>
+          <li>Innovation</li>
+          <li>Excellence</li>
+        </ul>
+      </div>
+      <div class="card achievements">
+        <h3>Achievements</h3>
+        <ul>
+          <li>Graduated with a BSc in Computer Science.</li>
+          <li>Completed a web design course on Udemy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>  
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="openModal(1)">
+        <h3>Social Media App</h3>
+        <p>A web app for connecting people.</p>
+        <a href="https://github.com/yourusername/social-media-app" target="_blank" class="github-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="project-card" onclick="openModal(2)">
+        <h3>Portfolio Website</h3>
+        <p>A personal website showcasing my skills and work.</p>
+        <a href="https://github.com/yourusername/portfolio-website" target="_blank" class="github-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="project-card" onclick="openModal(3)">
+        <h3>E-commerce Website</h3>
+        <p>An online store built with React and Node.js.</p>
+        <a href="https://github.com/yourusername/e-commerce-website" target="_blank" class="github-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="project-card" onclick="openModal(4)">
+        <h3>Task Manager App</h3>
+        <p>A productivity app for task management using React and Firebase.</p>
+        <a href="https://github.com/yourusername/task-manager-app" target="_blank" class="github-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-details"></div>
+      </div>
+    </div>
+  </section>    
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/movqlekr" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="mailto:leonardrongoma3@gmail.com" class="social-icon" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/leonard-rongoma/" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>  
+
+  <footer>
+    <p>&copy; 2024 Leonard Rongoma. All rights reserved.</p>
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+  </footer>  
+  <script src="script.js"></script>
+</body>
+</html>
