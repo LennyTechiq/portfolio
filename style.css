@@ -157,7 +157,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: url('../images/hero.jpg') center/cover no-repeat, 
+  background: url('../images/mirrorpixel.jpg') center/cover no-repeat, 
               linear-gradient(135deg, rgba(241, 196, 15, 0.7), rgba(230, 126, 34, 0.7)); /* Image with gradient overlay */
   padding: 120px 20px;
   color: white;
