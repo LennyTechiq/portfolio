@@ -574,48 +574,36 @@ nav {
   background-color: #0056b3;
 }
 
-/* Social Links */
-.social-links {
-  margin-top: 30px;
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.social-links a {
-  font-size: 2rem;
-  margin: 0 15px;
-  color: #007bff;
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #0056b3;
-}
-
-.social-links a:active {
-  color: #003366;
-}
-
-/* Icon Styling */
-.social-icon {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 50%;
-  background-color: #e6f0ff;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icon:hover {
-  background-color: #007bff;
-  transform: scale(1.1);
-}
-
-.social-icon i {
-  color: #007bff;
-  transition: color 0.3s ease;
-}
-
-.social-icon:hover i {
+  background-color: #111;
   color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #333;
+}
+
+.contact-btn.whatsapp {
+  background-color: #25d366;
+}
+
+.contact-btn.whatsapp:hover {
+  background-color: #1ebd5a;
 }
 
 /* Responsive Design */
