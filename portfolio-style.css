@@ -12,7 +12,7 @@ body {
   align-items: center;
   padding: 20px;
   background-color: #111;
-  color: white;
+  color: gold;
   position: relative;
   flex-wrap: wrap;
   text-align: center;
@@ -106,7 +106,7 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #000;
-    color: #fff;
+    color: gold;
     margin-top: 40px;
 }
 /* Lightbox Styles */
