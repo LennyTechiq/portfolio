@@ -204,3 +204,14 @@ footer {
 .contact-btn.whatsapp:hover {
   background-color: #1ebd5a;
 }
+
+.contact-btn.gold {
+  background-color: transparent;
+  border: 2px solid gold;
+  color: gold;
+}
+
+.contact-btn.gold:hover {
+  background-color: gold;
+  color: #111;
+}
