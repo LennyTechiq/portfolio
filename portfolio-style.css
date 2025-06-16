@@ -181,6 +181,14 @@ footer {
   transition: background-color 0.3s ease;
 }
 
+.contact-btn i {
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover i {
+  transform: scale(1.1);
+}
+
 .contact-btn:hover {
   background-color: #333;
 }
