@@ -179,10 +179,6 @@ footer {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-
-  min-width: 180px;
-  justify-content: center;
-  text-align: center;
 }
 
 .contact-btn i {
