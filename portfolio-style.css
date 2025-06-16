@@ -204,7 +204,7 @@ footer {
 .contact-btn.gold {
   background-color: transparent;
   border: 2px solid gold;
-  /*color: gold;*/
+  color: rgb(59, 51, 0);
 }
 
 .contact-btn.gold:hover {
