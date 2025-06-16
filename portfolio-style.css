@@ -183,6 +183,7 @@ footer {
 
 .contact-btn i {
   transition: transform 0.3s ease;
+  color: #111;
 }
 
 .contact-btn:hover i {
